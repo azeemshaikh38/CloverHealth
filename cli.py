@@ -18,4 +18,8 @@ for filename in os.listdir(dataFolder):
     for row in data.getData():
         query, params = q.insert_query(name.tableName, spec.getCols(), row)
         print(query, params)
+<<<<<<< HEAD
         db.insert(query, params) 
+=======
+        #db.insert(query, params) 
+>>>>>>> v1

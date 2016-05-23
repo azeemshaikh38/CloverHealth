@@ -1,9 +1,12 @@
 import re
+<<<<<<< HEAD
 import logging 
 from Commons import Commons
 
 logger = logging.getLogger('DataFile')
 logging.basicConfig(filename=Commons.LOG_FILE, level=Commons.LOGGER_LEVEL, format=Commons.LOGGER_FORMAT)
+=======
+>>>>>>> v1
 
 class DataFile:
     
