@@ -1,9 +1,15 @@
 import MySQLdb
+from Credentials import Credentials
+import logging
+from Commons import Commons
+
+logger = logging.getLogger('Db')
+logging.basicConfig(filename=Commons.LOG_FILE, level=Commons.LOGGER_LEVEL, format=Commons.LOGGER_FORMAT)
 
 class Db:
 
     def __init__(self):
-        self.conn = MySQLdb.connect(user='azeem', passwd='Aus316+ghus', host='mafia.chl88ez3ycw9.us-west-2.rds.amazonaws.com')
+        self.conn = MySQLdb.connect(user=Credentials.DB_USER, passwd=Credentials.DB_PASSWD, host=Credentials.DB_SERVER)
 
     def get_cursor(self):
         return self.conn.cursor()

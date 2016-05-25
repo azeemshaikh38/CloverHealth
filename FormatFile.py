@@ -1,4 +1,9 @@
 import csv
+import logging
+from Commons import Commons
+
+logger = logging.getLogger('FormatFile')
+logging.basicConfig(filename=Commons.LOG_FILE, level=Commons.LOGGER_LEVEL, format=Commons.LOGGER_FORMAT)
 
 class FormatFile:
     
