@@ -1,13 +1,19 @@
 import re
 from dateutil import parser
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> v2
 import logging
 from Commons import Commons
 
 logger = logging.getLogger('FileNames')
 logging.basicConfig(filename=Commons.LOG_FILE, level=Commons.LOGGER_LEVEL, format=Commons.LOGGER_FORMAT)
+<<<<<<< HEAD
 =======
 >>>>>>> v1
+=======
+>>>>>>> v2
 
 class FileNames:
 
