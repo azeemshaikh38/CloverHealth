@@ -17,4 +17,3 @@ class Credentials:
     DB_SERVER = cfg.get("DB", "SERVER")
     DB_USER = cfg.get("DB", "USER")
     DB_PASSWD = cfg.get("DB", "PASSWD")
-    DB_NAME = cfg.get("DB", "NAME")
