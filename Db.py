@@ -9,7 +9,7 @@ logging.basicConfig(filename=Commons.LOG_FILE, level=Commons.LOGGER_LEVEL, forma
 class Db:
 
     def __init__(self):
-        self.conn = MySQLdb.connect(user=Credentials.DB_USER, passwd=Credentials.DB_PASSWD, host=Credentials.DB_SERVER)
+        self.conn = MySQLdb.connect(user=Credentials.DB_USER, passwd=Credentials.DB_PASSWD, host=Credentials.DB_SERVER, db=Credentials.DB_NAME)
 
     def get_cursor(self):
         return self.conn.cursor()
